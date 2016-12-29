@@ -142,8 +142,8 @@ public class MainActivity extends AppCompatActivity {
     private String getfeild3() throws NoSuchFieldException {
         String msg = null;
         Class cls = Person.class;
-        Field field = cls.getField("tag");
-        msg = "Person公共属性tag:" + field.getName();
+        Field field = cls.getField("num");
+        msg = "Person公共属性num:" + field.getName();
         return msg;
     }
     private String getfeild4() throws NoSuchFieldException {
