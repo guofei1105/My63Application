@@ -5,11 +5,44 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context="com.bwf.my63application.MainActivity">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        >
+        <Button
+            android:text="获取所有公共属性"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2" />
+        <Button
+            android:text="获取所有属性"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1" />
+
+        <Button
+            android:text="属性修改值"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn3" />
+        <Button
+            android:text="获取属性"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn4" />
+        <Button
+            android:text="获取公共属性"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn5" />
+    </GridLayout>
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="基础图表"
-        android:textSize="28sp" />
+        android:textSize="18dp" />
+
 </RelativeLayout>
