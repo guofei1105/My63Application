@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:orientation="vertical"
     tools:context="com.bwf.my63application.MainActivity">
     <GridLayout
         android:layout_width="match_parent"
@@ -22,27 +22,65 @@
             android:id="@+id/btn1" />
 
         <Button
-            android:text="属性修改值"
+            android:text="修改属性tag值"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn3" />
         <Button
-            android:text="获取属性"
+            android:text="获取属性name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn4" />
         <Button
-            android:text="获取公共属性"
+            android:text="获取公共属\n性num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn5" />
     </GridLayout>
+
+    <GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    >
+    <Button
+        android:text="获取this/super\n的公共方法"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn21" />
+
+        <Button
+            android:text="获取所有方法"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn22" />
+
+        <Button
+        android:text="属性修改值"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn23" />
+
+        <Button
+        android:text="获取属性"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn24" />
+
+        <Button
+        android:text="获取公共属性"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn25"
+            android:layout_row="1"
+            android:layout_column="1" />
+    </GridLayout>
+
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:text="基础图表"
         android:textSize="18dp" />
 
-</RelativeLayout>
+</LinearLayout>
